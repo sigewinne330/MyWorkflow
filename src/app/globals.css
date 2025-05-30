@@ -24,3 +24,101 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 滚动条整体样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 垂直滚动条宽度 */
+  height: 8px; /* 水平滚动条高度 */
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.3); /* 轨道背景色 */
+  border-radius: 4px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background: grey; /* 滑块颜色 */
+  border-radius: 4px;
+}
+
+/* 文件上传按钮 */
+input[type="file"]::file-selector-button {
+  /* 按钮样式 */
+  background-color: #0ea5e9; /* sky-500 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 18px 6px 18px;
+  margin-right: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0369a1; /* sky-700 */
+}
+
+input[type="file"]::file-selector-button:active {
+  background-color: #7dd3fc; /* sky-300 */
+}
+
+/* 输入框通用样式 */
+.custom-input {
+  display: inline-block;
+  border: 1px solid #0369a1; /* sky-700 */
+  border-radius: 0.25rem;
+  padding: 0rem 0.25rem 0rem 0.25rem;
+  height: 2rem;
+}
+
+.custom-input:focus {
+  outline: none;
+  border: 1px solid #0ea5e9;
+  background-color: #e0f2fe;
+}
+
+/* 标签通用样式 */
+label {
+  display: inline-block;
+  width: 5rem;
+  height: 2rem;
+  text-align: left;
+  color:black;
+  background:none;
+}
+
+/* 下拉菜单选项通用样式 */
+option{
+  background-color: white;
+  color: black;
+}
+
+option:hover{
+  background: #0ea5e9;
+  color: white;
+}
+
+/* 登录页面选项卡样式 */
+.index_tab_selected {
+  color:#0ea5e9;
+  border-bottom: 2px solid #0ea5e9;
+}
+
+.index_tab_normal {
+  color: black;
+  border:none;
+}
+
+/* 主页选项卡样式 */
+.app_tab_selected {
+  color:#0ea5e9;
+  border-bottom: 2px solid #0ea5e9;
+}
+.app_tab_normal {
+  color: black;
+  border: none;
+}
+
+  
