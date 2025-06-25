@@ -227,6 +227,9 @@ export default function Handler() {
           Router.replace('/');
           return;
         }
+        else if (sessionStorage.getItem('usertype')!.toString()!=="3"){
+            Router.back();
+        }
         else {
             setUsername(hasSession);
         }

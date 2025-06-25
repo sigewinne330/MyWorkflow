@@ -290,6 +290,9 @@ export default function Applicator() {
           Router.replace('/');
           return;
         }
+        else if (sessionStorage.getItem('usertype')!.toString()!=="1"){
+            Router.back();
+        }
         else {
             setUsername(hasSession);
         }

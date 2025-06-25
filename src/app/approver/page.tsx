@@ -226,6 +226,9 @@ export default function Approver() {
           Router.replace('/');
           return;
         }
+        else if (sessionStorage.getItem('usertype')!.toString()!=="2"){
+            Router.back();
+        }
         else {
             setUsername(hasSession);
         }
